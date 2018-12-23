@@ -17,6 +17,15 @@
         <link href="static/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
         <!-- NProgress -->
         <link href="static/vendors/nprogress/nprogress.css" rel="stylesheet">
+        <!-- iCheck -->
+        <link href="static/vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+
+        <!-- bootstrap-progressbar -->
+        <link href="static/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+        <!-- JQVMap -->
+        <link href="static/vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>
+        <!-- bootstrap-daterangepicker -->
+        <link href="static/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
 
         <!-- Custom Theme Style -->
         <link href="static/build/css/custom.min.css" rel="stylesheet">
@@ -30,69 +39,28 @@
                 <!-- page content -->
                 <div class="right_col" role="main">
                     <div class="">
-                        <div class="page-title">
-                            <div class="title_left">
-                                <h3>Aðýrlýk Analizi</h3>
-                            </div>
-                        </div>
-
                         <div class="clearfix"></div>
-
                         <div class="col-md-12 col-sm-12 col-xs-12">
-                            <div class="x_panel">
-                                <div class="x_title">
-                                    <h2><i class="fa fa-bars"></i> Vertical Tabs <small>Float left</small></h2>
-                                    <ul class="nav navbar-right panel_toolbox">
-                                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                                        </li>
-                                        <li class="dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                                            <ul class="dropdown-menu" role="menu">
-                                                <li><a href="#">Settings 1</a>
-                                                </li>
-                                                <li><a href="#">Settings 2</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a class="close-link"><i class="fa fa-close"></i></a>
-                                        </li>
-                                    </ul>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="x_content">
- 
-                                   <div class="col-md-2">
-                                        <!-- required for floating -->
-                                        <!-- Nav tabs -->
-                                        <ul class="nav nav-tabs tabs-left">
-                                            <li class="" style='text-align: center;'><a href="#home" data-toggle="tab" aria-expanded="false">Padok 1</a>
-                                            </li>
-                                            <li class="active" style='text-align: center;'><a href="#profile" data-toggle="tab" aria-expanded="true">Padok 2</a>
-                                            </li>
-                                            <li class="" style='text-align: center;'><a href="#messages" data-toggle="tab" aria-expanded="false">Padok 3</a>
-                                            </li>
-                                            <li class="" style='text-align: center;'><a href="#settings" data-toggle="tab" aria-expanded="false">Padok 4</a>
-                                            </li>
-                                        </ul>
-                                    </div>
+                            <div class="dashboard_graph">
 
-                                    <div class="col-md-10">
-                                        <!-- Tab panes -->
-                                        <div class="tab-content">
-                                            <div class="tab-pane" id="home">
-                                                <p class="lead">Home tab</p>
-                                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher
-                                                    synth. Cosby sweater eu banh mi, qui irure terr.</p>
-                                            </div>
-                                            <div class="tab-pane active" id="profile">Profile Tab.</div>
-                                            <div class="tab-pane" id="messages">Messages Tab.</div>
-                                            <div class="tab-pane" id="settings">Settings Tab.</div>
+                                <div class="row x_title">
+                                    <div class="col-md-6">
+                                        <h3>Padok Aðýrlýk Karþýlaþtýrmasý</h3>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div id="reportrange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
+                                            <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
+                                            <span>November 20, 2018 - December 19, 2018</span> <b class="caret"></b>
                                         </div>
                                     </div>
-
-                                    <div class="clearfix"></div>
-
                                 </div>
+
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div id="chart_plot_01" class="demo-placeholder" style="padding: 0px; position: relative;"><canvas class="flot-base" width="1258" height="560" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 629px; height: 280px;"></canvas><div class="flot-text" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; font-size: smaller; color: rgb(84, 84, 84);"><div class="flot-x-axis flot-x1-axis xAxis x1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;"><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 78px; top: 263px; left: 16px; text-align: center;">Jan 01</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 78px; top: 263px; left: 113px; text-align: center;">Jan 02</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 78px; top: 263px; left: 211px; text-align: center;">Jan 03</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 78px; top: 263px; left: 309px; text-align: center;">Jan 04</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 78px; top: 263px; left: 407px; text-align: center;">Jan 05</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 78px; top: 263px; left: 505px; text-align: center;">Jan 06</div></div><div class="flot-y-axis flot-y1-axis yAxis y1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;"><div class="flot-tick-label tickLabel" style="position: absolute; top: 250px; left: 13px; text-align: right;">0</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 231px; left: 7px; text-align: right;">10</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 212px; left: 7px; text-align: right;">20</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 192px; left: 7px; text-align: right;">30</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 173px; left: 7px; text-align: right;">40</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 154px; left: 7px; text-align: right;">50</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 135px; left: 7px; text-align: right;">60</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 115px; left: 7px; text-align: right;">70</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 96px; left: 7px; text-align: right;">80</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 77px; left: 7px; text-align: right;">90</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 58px; left: 1px; text-align: right;">100</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 38px; left: 1px; text-align: right;">110</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 19px; left: 1px; text-align: right;">120</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 0px; left: 1px; text-align: right;">130</div></div></div><canvas class="flot-overlay" width="1258" height="560" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 629px; height: 280px;"></canvas></div>
+                                </div>
+
+
+                                <div class="clearfix"></div>
                             </div>
                         </div>
                     </div>
@@ -115,6 +83,23 @@
         <script src="static/vendors/fastclick/lib/fastclick.js"></script>
         <!-- NProgress -->
         <script src="static/vendors/nprogress/nprogress.js"></script>
+        <!-- Chart.js -->
+        <script src="static/vendors/Chart.js/dist/Chart.min.js"></script>
+        <!-- Flot -->
+        <script src="static/vendors/Flot/jquery.flot.js"></script>
+        <script src="static/vendors/Flot/jquery.flot.pie.js"></script>
+        <script src="static/vendors/Flot/jquery.flot.time.js"></script>
+        <script src="static/vendors/Flot/jquery.flot.stack.js"></script>
+        <script src="static/vendors/Flot/jquery.flot.resize.js"></script>
+        <!-- Flot plugins -->
+        <script src="static/vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+        <script src="static/vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+        <script src="static/vendors/flot.curvedlines/curvedLines.js"></script>
+        <!-- DateJS -->
+        <script src="static/vendors/DateJS/build/date.js"></script>
+        <!-- bootstrap-daterangepicker -->
+        <script src="static/vendors/moment/min/moment.min.js"></script>
+        <script src="static/vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
 
         <!-- Custom Theme Scripts -->
         <script src="static/build/js/custom.min.js"></script>
