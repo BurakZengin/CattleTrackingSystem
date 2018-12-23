@@ -10,8 +10,10 @@ import com.trackingSystem.service.PadokService;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -42,7 +44,9 @@ public class LoginController {
     }
     
     @RequestMapping(value = "/WeightTrack", method = RequestMethod.GET)
-    public String WeightTracking() {
+    public String WeightTracking(Model m) {
+        List<Padok> padok = padokService.findAll();
+        m.addAttribute("list", padok);
         return "WeightTrack";
     }
     
